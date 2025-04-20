@@ -1,11 +1,13 @@
 // ==UserScript==
-// @name       wnacg-slide
-// @namespace  npm/vite-plugin-monkey
-// @version    0.1.0
-// @author     monkey
-// @icon       https://vitejs.dev/logo.svg
-// @match      https://www.wnacg.com/*
-// @grant      GM_addStyle
+// @name         wnacg-slide
+// @namespace    npm/vite-plugin-monkey
+// @version      0.1.0
+// @author       hamasakin
+// @description  为wnacg添加快捷下拉阅读按钮
+// @license      MIT
+// @icon         https://vitejs.dev/logo.svg
+// @match        https://www.wnacg.com/*
+// @grant        GM_addStyle
 // ==/UserScript==
 
 (t=>{if(typeof GM_addStyle=="function"){GM_addStyle(t);return}const e=document.createElement("style");e.textContent=t,document.head.append(e)})(" .pic_box{position:releative}.slide-btn{position:absolute;bottom:6px;left:0;right:0;flex-direction:column;align-items:center;display:none;transition:all .3s ease}.pic_box:hover .slide-btn{display:flex;cursor:pointer}.slide-btn p{width:80%;background-color:#0006;color:#fff;font-size:16px;font-weight:600;text-align:center;line-height:26px;border-radius:12px}.back-btn{position:fixed;left:40px;bottom:40px;border:none;background-color:transparent}.back-btn:hover{cursor:pointer}.back-btn svg{width:34px;height:34px} ");
