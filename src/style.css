@@ -1,0 +1,47 @@
+.pic_box {
+  position: releative;
+}
+
+.slide-btn {
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.pic_box:hover .slide-btn {
+  display: flex;
+  cursor: pointer;
+}
+
+.slide-btn p {
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 26px;
+  border-radius: 12px;
+}
+
+.back-btn {
+  position: fixed;
+  left: 40px;
+  bottom: 40px;
+  border: none;
+  background-color: transparent;
+}
+
+.back-btn:hover {
+  cursor: pointer;
+}
+
+.back-btn svg {
+  width: 34px;
+  height: 34px;
+}
